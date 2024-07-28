@@ -1,0 +1,247 @@
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./bootstrap.min.css" rel="stylesheet">
+        <link href="./login.mfa.css" rel="stylesheet" type="text/css">
+        <link href="./font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <title>QuickLaunchSSO :: Single Sign-On to all your Apps</title>
+        <link href="./css" rel="stylesheet" class="ng-scope">
+    </head>
+
+    <body class="ng-scope" style="background: url(./1687272013971.jpg) center center / cover no-repeat fixed;">
+
+ 
+<div class="login-bg ng-scope">
+    <header aria-label="Header" class="clearfix">
+        <nav class="navbar navbar-default navbar-default-disabled navbar-fixed-top ng-scope">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- ngIf: branding.preLoginHeaderLogoEnabled --><div class="navbar-header ng-scope" ng-if="branding.preLoginHeaderLogoEnabled">
+                            <a class="navbar-brand header-none-logo" aria-label="QuickLaunchSSO :: Single Sign-On to all your Apps" ng-href="https://sso-mc.quicklaunch.io" ng-class="!branding.enableHeader?&#39;header-none-logo&#39;:&#39;&#39;" href="https://sso-mc.quicklaunch.io/">
+                                <img src="./1687270572967.png" class="img-responsive" alt="QuickLaunchSSO :: Single Sign-On to all your Apps" id="branding-logo" src="./QuickLaunchSSO __ Single Sign-On to all your Apps_files/1687270572967.png">
+                            </a>
+                        </div><!-- end ngIf: branding.preLoginHeaderLogoEnabled -->
+                    </div>
+                </div>
+            </div>
+        </nav><!-- end ngIf: !branding.enableHeader -->
+    </header>
+    <section class="page-content">
+        <div class="container">
+            <div class="row main-contemporary">
+                <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-12 text-center pad-A0 contemporary-theme">
+                    <div class="form-section" ng-style="{&#39;color&#39;: branding.formTextColor, &#39;background-color&#39;: branding.formBgColor}" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+                        <h1 class="heading-section mrg-T0 ng-binding ng-scope" ng-if="branding.isFormLabelEnabled" ng-bind="branding.formLabel" ng-style="{&#39;color&#39;: branding.formLabelFontColor, &#39;font-size&#39;: branding.formLabelFontSize}" style="color: rgb(0, 0, 0); font-size: 20px;">Log in to MyMC</h1>
+
+                        <form class="mrg-B0 ng-pristine ng-valid" id="branding-login">
+                            <div class="form-group">
+                                <label for="branding-username" class="sr-only" aria-hidden="true">Username</label>
+                                <div class="userName-input">
+                                    <input id="branding-username" name="branding-username" type="text" class="form-control ng-pristine ng-valid ng-touched ng-empty" placeholder="Username" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="branding-password" class="sr-only" aria-hidden="true">Password</label>
+                                <div class="pass-input pos-relative">
+                                    <input id="branding-password" name="branding-password" type="password" class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="Password" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-group login-btn">
+                                <input class="btn btn-primary mrg-T30 ng-binding" type="submit" value="LOGIN">
+                            </div>
+                            <div class="form-group external-links mrg-B0">
+                                <a ng-style="{&#39;color&#39;: branding.formTextColor }" ng-href=""ng-if="branding.firstTimeUserEnabled" class="ng-binding ng-scope" href="" style="color: rgb(0, 0, 0);">First Time User <span ng-hide="!branding.forgotPasswordEnabled &amp;&amp; !branding.forgotUserNameEnabled"> |</span> </a><!-- end ngIf: branding.firstTimeUserEnabled -->
+                                <a ng-style="{&#39;color&#39;: branding.formTextColor }" ng-href=""ng-if="branding.forgotPasswordEnabled" class="ng-binding ng-scope" href="" style="color: rgb(0, 0, 0);">Forgot Password</a><!-- end ngIf: branding.forgotPasswordEnabled -->
+                                <a ng-style="{&#39;color&#39;: branding.formTextColor }" ng-href="" ng-if="branding.forgotUserNameEnabled" class="ng-binding ng-scope" href="h" style="color: rgb(0, 0, 0);"> <span ng-hide="(!branding.firstTimeUserEnabled &amp;&amp; !branding.forgotPasswordEnabled) || (branding.firstTimeUserEnabled &amp;&amp; !branding.forgotPasswordEnabled)">|</span> Forgot Username</a><!-- end ngIf: branding.forgotUserNameEnabled -->
+                            </div>
+                            <div id="innerdiv" class="border pad">
+                                <p>
+                                    <a href="">Banner Web (No Longer Enrolled)</a>
+                                 </p>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-fixed ng-scope" ng-if="branding.enableFooter" ng-style="{&#39;color&#39;: branding.footerTextColor, &#39;background-color&#39;: branding.footerColor}" style="color: rgb(255, 255, 255); background-color: rgb(40, 40, 40);">
+                <div class="col-xs-12 text-center">
+                    <p class="ng-binding">©2024 <a ng-href="https://quicklaunch.io" target="_blank" ng-style="{&#39;color&#39;: branding.footerTextColor}" href="https://quicklaunch.io/" style="color: rgb(255, 255, 255);"><span class="ng-binding">QuickLaunch SSO</span></a>, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<style class="ng-scope">
+    .declineModel .terms-conditions-section p{font-size: 13px;}
+    .terms-conditions-updated {padding: 15px 30px 30px;height: 400px;overflow-x: hidden;}
+    .terms-conditions-updated::-webkit-scrollbar {width: 8px;}
+    .terms-conditions-updated::-webkit-scrollbar-track {background: #f1f1f1;border-radius: 10px;}
+    .terms-conditions-updated::-webkit-scrollbar-thumb {background: #ddd;border-radius: 10px;}
+    .terms-conditions-updated::-webkit-scrollbar-thumb:hover {background: #a8a8a8;}
+    .terms-conditions-updated p{text-align: left!important;}
+    .declineModel {text-align: center;padding: 0!important;margin-top: 0!important;}
+    .declineModel:before {content: '';display: inline-block;height: 100%;vertical-align: middle;margin-right: -4px;}
+    .declineModel .modal-dialog {display: inline-block;text-align: left;vertical-align: middle;}
+    .agree-btn{white-space: pre-wrap;}
+
+    .mrg-T25{margin-top: 25px!important;}
+    .pad-B0{padding-bottom: 0px!important;}
+    .team-condition-modal .modal-content{padding: 0;}
+    .team-condition-modal .modal-content p{font-size: 13px!important;}
+    .team-condition-footer{text-align: center!important;border: none;border-top: 1px solid #e5e5e5;}
+    .team-condition-footer .decline{color:inherit;}
+    .team-condition-header{padding: 15px!important;border-radius: 3px 3px 0 0;}
+    .team-condition-modal .modal-content .modal-body{padding-top: 0px;}
+    .branding-form{position: relative;}
+    .branding-form .notifyjs-wrapper{position: absolute!important;top: 0;left: 0;width: 100%!important;}
+    .branding-form .notifyjs-container{width: 100%}
+    @import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Slab');
+    body{font-family: 'Lato', sans-serif;font-weight:400;background: #fff;}
+    .header-none-logo{padding: 15px 0 0 0!important;}
+    .pad-A0{padding: 0px;}
+    .mrg-B0{margin-bottom: 0px;}
+    .mrg-B15{margin-bottom: 15px;}
+    .mrg-T95{margin-top: 95px}
+    .store-bar{margin-top: 15px;line-height: 1;}
+    .store-bar a {display: inline-block;}
+    /*.login-bg {background-size: cover;min-height: 570px;}*/
+    .login-bg {background-size: cover;height: 100vh;}
+    nav.navbar.navbar-default {background: #fff;border: none;padding:0;}
+    img.img-responsive {margin: 0 auto;backface-visibility: hidden;}
+    .form-section {padding:40px 30px 30px;border-radius: 5px;}
+    .form-section h1 {margin-bottom: 25px;}
+    .form-section .form-control {text-align: center;border-radius: 0;height: 45px;margin-bottom: 25px;border-width: 0 0 1px 0;box-shadow: none;}
+    .external-links{padding: 0;margin: 30px 0 0 0}
+    .external-links a {word-break: break-word; font-size: 13px;}
+    .btn-primary{border-radius: 5px;padding: 4px 20px;}
+    .footer-fixed {position: fixed;bottom: 0;left: 0;right: 0;background: #fff; padding-top: 10px;}
+    .footer-fixed p{font-size: 12px;}
+    .footer-fixed a{text-decoration: underline;}
+    .login-box-container {position: absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%);}
+    .navbar-default-disabled {background: transparent !important;}
+    body{background-size:cover!important}
+    .main-contemporary{height: calc(100vh - 40px);display: table;width: 100%;margin: 0;padding-top: 80px}
+    .main-contemporary .contemporary-theme {display: table-cell;vertical-align: middle;float: none;}
+    .login-btn .btn-primary{border-radius: 5px;padding: 8px 25px;}
+    .height100-vh{height: 100vh;}
+    header{min-height: 0;width: 100%;}
+    header nav{width: 100%}
+    .test_defaultTheme{display: none;}
+    .captcha-section div{margin: auto;}
+    a.field-icon {position: absolute;display: inline-block;cursor: pointer;right: 10px;top: 30px;z-index: 2;}
+    a.field-icon:hover{text-decoration: none;}
+    .pos-relative{position: relative;}
+    .team-condition-check{font-size: 12px;display: inline-block;margin-bottom: 15px;}
+
+    /*For Media Queries*/
+    @media (max-width: 991px){
+        .navbar-fixed-top{position: inherit; margin-bottom: 0;}
+        .main-contemporary{height: calc(100vh - 120px);margin: 0;padding-top: 0px}
+    }
+
+    @media screen and (orientation:landscape) and (max-device-width: 991px){
+        .main-contemporary{padding-top: 40px;padding-bottom: 80px;}
+
+    }
+
+    @media (max-width: 767px){
+        .navbar.navbar-default .navbar-brand{width: 100%}
+        .form-section{padding: 20px 30px!important;margin-left: 15px; margin-right: 15px;}
+    }
+
+    @media only screen and (max-width: 480px){
+        .form-section {padding: 20px 15px!important;margin-left: 0px; margin-right: 0px;}
+
+    }
+
+    @media only screen and (max-width: 400px) {
+        .external-links a {font-size: 10px !important;}
+    }
+    input::-ms-reveal, input::-ms-clear {
+        display: none;
+    }
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        /* Safari only override */
+        ::i-block-chrome,.navbar-header .navbar-brand{
+            display: inline-block;
+        }
+    }
+</style>
+
+
+
+<footer class="row footer-fixed zIndex1052 ng-scope" ng-if="branding.enableFooter" ng-style="{&#39;color&#39;: branding.footerTextColor, &#39;background-color&#39;: branding.footerColor}" style="color: rgb(255, 255, 255); background-color: rgb(40, 40, 40);">
+    <div class="col-xs-12 text-center">
+        <p class="ng-binding">©2024 <a ng-href="https://quicklaunch.io" target="_blank" ng-style="{&#39;color&#39;: branding.footerTextColor}" href="https://quicklaunch.io/" style="color: rgb(255, 255, 255);"><span class="ng-binding">QuickLaunch SSO</span></a> | Inc. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+<style>/* Change text color for the input entered by the user and its background also*/
+  @import url("https://use.typekit.net/ddh8zho.css");
+input, textarea{color: #000!important; background: transparent !important}
+.box input, .box textarea{color: inherit !important}
+body {background-color:#0c2340!important; font-family: new-atten,sans-serif!important;}
+.form-section h1 {
+font-family: psfournier-std,serif!important;
+    font-size: 28px!important;
+    font-weight: 700!important;
+    letter-spacing: -.375px!important; }
+header {background:transparent!important; }
+.navbar-header {margin:20px auto 0 auto!important; float:none!important;}
+.login-btn .btn-primary {color:#0c2340!important; background: #C99700!important;}
+
+.pass-mfaBox button {    background: #0b323e;}
+
+.pass-mfaBox .pull-right button {
+    background: #0b323e;
+}
+.userName {
+    display: inline-block;
+    padding-top: 6px!important;
+    float: left;
+    color: #fff;
+}
+.pass-mfaBox button.back_icon {
+    background: transparent;
+}
+
+.create_password_content #fullName {
+    color: #000 !important;
+}
+
+div#creat-password button.custom-btn {
+    /*background: #0b323e;
+    color: #fff !important;*/
+color:#0c2340!important; background: #C99700!important;font-weight:700!important;
+}
+
+.form-section {
+        max-width: 400px;
+    margin: 0 auto;
+}
+div#innerdiv {
+    padding-top: 14px;
+}
+
+div#innerdiv p a  {
+    font-size:13px;
+color:#000;
+}
+.navbar-header .navbar-brand img.img-responsive {
+    width: 160px;
+height:auto;
+Max-height:none!important;
+}
+</style>
+<script src="./script.js"></script>
+</body>
+</html>
